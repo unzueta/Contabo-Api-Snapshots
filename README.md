@@ -1,4 +1,4 @@
 # Contabo-Api-Snapshots
 Automate Contabo Snapshot
 
-A bash scrpit to automate Snapshots
+A bash script to automate Snapshots
