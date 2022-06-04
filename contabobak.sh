@@ -4,7 +4,7 @@
 ## Snapshots from Contabo Instances ##
 ######################################
 
-InstanceIds=$(./cntb get instances -o json | jq '. | .[].instanceId')
+InstanceIds=$(./cntb get instances -o json | jq '. | sort_by(.instanceId) | .[].instanceId')
 
 for InstanceId in $(echo "${InstanceIds}"); do  
 echo "Instance Id: ${InstanceId}"
